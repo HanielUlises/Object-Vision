@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+*.egg
+*.whl
+*.dist-info/
+*.env/
+*.venv/
+env/
+venv/
+*.log
+
+# Virtual environment
+depthpro_env/
+.env/
+
+# Checkpoints
+checkpoints/
+*.pt
+
+# Images / outputs
+output_*.jpg
+output_*.png
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# macOS
+.DS_Store
+
+# Misc
+*.tmp
