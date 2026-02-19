@@ -1,4 +1,4 @@
-# 🚨 Obstacle Alert Cam
+# 🚨 BREAKING: Obstacle Alert Cam
 
 Real-time obstacle detection + metric depth estimation.  
 Objects closer than a configurable distance threshold trigger a visual danger overlay and an audio beep.

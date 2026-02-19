@@ -1,0 +1,35 @@
+# Obstacle Alert Cam — settings.yaml
+# All fields are optional; defaults are shown below.
+
+# --- Model paths (relative to project root) ---
+YOLO_MODEL: "models/yolo11s.pt"
+DEPTH_CHECKPOINT: "models/depth_pro.pt"
+
+# --- Detection ---
+YOLO_CONF_THRESHOLD: 0.4
+DANGER_CLASSES:
+  - person
+  - car
+  - bicycle
+  - motorcycle
+  - dog
+  - cat
+  - truck
+  - bus
+
+# --- Distance ---
+DISTANCE_THRESHOLD: 1.8    # metres — objects closer than this trigger alert
+DEPTH_ROI_HALF: 15         # pixel radius used for median depth sampling
+DEPTH_INTERVAL: 0.4        # seconds between depth model runs (0 = every frame)
+
+# --- Audio alert ---
+ENABLE_BEEP: true
+BEEP_FREQUENCY: 1000       # Hz  (Windows winsound only)
+BEEP_DURATION: 300         # ms  (Windows winsound only)
+
+# --- UI ---
+SHOW_FPS: false
+OVERLAY_ALPHA: 0.25        # danger overlay transparency (0–1)
+
+# --- Device ---
+DEVICE: "auto"             # "auto" | "cuda" | "cpu"
